@@ -10,42 +10,37 @@ __updated__ = "2026-01-27"
 """
 public class Note {
   private final int x, y; 
-  private final int height, width;
+  private final int width, height;
   private final String colour;
   private final String message;
 
-  public Note(int x, int y, int height, int width, String colour, String message) {
+  public Note(int x, int y, int width, int height, String colour, String message) {
     this.x = x;
     this.y = y;
-    this.height = height;
     this.width = width;
+    this.height = height;
     this.colour = colour;
     this.message = message;
   }
 
   public int getX() {
-    return x; 
-  }
+    return x; }
 
   public int getY() {
-    return y; 
-  }
-
-  public int getHeight() {
-    return height; 
-  }
-
+    return y; }
+ 
   public int getWidth() {
-    return width; 
-  }
+    return width; }
+  
+  public int getHeight() {
+    return height; }
 
   public int getColour() {
-    return colour; 
-  }
+    return colour; }
 
   public int getMsg() {
-    return message; 
-  }
+    return message; }
+  
   /* -----------------------------------------------------
   check if note COMPLETELY overlaps with another note, n 
   ('Completely overlaps' - occupy the exact same rectangular region)
